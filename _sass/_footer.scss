@@ -1,0 +1,45 @@
+// ======================================================================
+// footer
+
+.footer {
+  padding: 3rem 2rem;
+  background: #fff;
+  body:not(.front) & {
+    border-top: 1px solid rgba($neutral-light, 0.4);
+  }
+
+  .cc,
+  .cc img {
+    display: inline-block;
+  }
+
+  .colophon,
+  .footer-list li:first-child {
+    font-weight: bold;
+  }
+
+}
+
+@include responsive('min-width: #{$width-tablet}') {
+
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .colophon {
+    margin-right: 2rem;
+    flex: 1 0 28%;
+  }
+
+  .footer-list {
+    flex: 4 1 68%;
+  }
+
+}
+
+@media (min-width: 1px) and (max-width: #{$width-tablet}) {
+  .footer-list :first-child {
+    margin-top: 1.7em;
+  }
+}

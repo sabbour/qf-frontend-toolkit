@@ -1,0 +1,23 @@
+.c-section {
+	padding: 1rem 0;	
+}
+
+.c-section-header {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	align-items: center;
+}
+
+.c-section-header,
+.c-section-image {
+	align-self: center;
+}
+
+.c-section-header span {
+	display: block;
+}
+
+.c-section-image {
+	padding-right: 1rem;
+}

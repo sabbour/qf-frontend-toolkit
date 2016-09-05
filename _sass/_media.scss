@@ -1,0 +1,10 @@
+.media-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	svg { 
+		width: 5.8rem;
+		fill: $neutral-dark;
+		transition: fill 0.7s;
+	}
+}

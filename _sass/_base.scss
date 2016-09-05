@@ -1,0 +1,56 @@
+body {
+  font: 16px/26px -apple-system, Avenir, Helvetica, Helvetica Neue, Arial;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  outline: 0;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.site-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  color: $black;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.logo,
+.content,
+.footer {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  flex: 1 auto;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 0 2rem;
+}
+
+.landing .content {
+  padding: 0;
+}
+
+nav a {
+  color: $qfp-blue;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+  &:hover {
+    color: $link-hover;
+  }
+}

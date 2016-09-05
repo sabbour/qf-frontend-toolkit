@@ -1,0 +1,117 @@
+// Some list helpers
+%u-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Remove margin and bullets from lists.
+.u-unstyled {
+  @extend %u-unstyled;
+}
+
+// List of inline items
+.inline-list {
+  @extend %u-unstyled;
+}
+.inline-list-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+// list
+.list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-content: flex-start;
+	flex-flow: column	wrap;
+}
+
+.list-grid {
+	flex-flow: row wrap;
+}
+
+@media (min-width: 1px) and (max-width: #{$width-tablet}) {
+	.list-grid {
+		flex-flow: column wrap;
+	}
+}
+
+.list-item {
+	padding: 1em 0.8em;
+	flex: 0 auto;
+	display: flex;
+	align-content: flex-start;
+	justify-content: flex-start;
+	& > div {
+		flex: 0 auto;
+		align-self: flex-start;
+	}
+}
+
+.list-grid .list-item {
+	flex-flow: column wrap;
+	& > div {
+		flex: 0 auto;
+		align-self: center;
+	}
+}
+
+.list-item:hover .list-title {
+	color: $qfp-blue;
+}
+
+@media (min-width: 1px) and (max-width: #{$width-tablet}) {
+	.list-item {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.list-media {
+	border: 1px solid $neutral-light;
+	transition: all 0.7s;
+	img {
+		display: block;
+	}
+}
+
+.list-grid .list-media {
+	border-radius: 4px;
+	min-width: 14rem;
+	min-height: 14rem;
+}
+
+.list-grid .list-item:hover .list-media {
+	border-color: $qfp-blue;
+	background-color: rgba($link, 0.2);
+}
+
+.list-grid .list-item:hover .media-icon svg {
+	fill: $qfp-blue;
+}
+
+.list-content {
+	padding-bottom: 1rem;
+	margin-left: 2rem;
+	a { color: $qfp-blue; }
+	a:hover { color: $link-hover; }
+}
+
+.list-grid .list-content {
+	padding-top: 1rem;
+	margin-left: 0;
+}
+
+.list-content :first-child {
+	margin-top: 0;
+}
+
+.list-title {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+}
