@@ -1,17 +1,5 @@
-# qfnext
+# Qatar Foundation frontend toolkit
 
-# Requirements
-Development time dependencies:
-- Ruby
-- Gems
-- Jekyll
+A collection of Sass and Javascript files for using as part of your application's frontend.
 
-Run-time dependencies:
-A web server (any will do)
-
-# Beginners Guide
-1. Clone the repo
-2. Run `bundle install`
-3. Run `jekyll serve` to generate site locally
-4. View it by going to `http://localhost:4000`
-# qf-frontend-toolkit
+This project is under developemnt and not ready for production.
