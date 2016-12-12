@@ -90,7 +90,13 @@
 }
 
 .list-grid .list-item:hover .media-icon svg {
+	display: block;
+	margin: auto;
 	fill: $qfp-blue;
+}
+
+.list-grid .list-item .media-icon svg {
+	fill: rgba($qfp-blue, 0.4);
 }
 
 .list-content {
